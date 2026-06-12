@@ -1113,6 +1113,93 @@
 		}
 	}
 
+	"disruptor_thunder_strike_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "disruptor_passives_custom.lua"
+		"AbilityTextureName"     "disruptor_thunder_strike"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"thunder_interval"    "18 15 12 9"
+			"search_radius"       "800"
+			"radius"              "260"
+			"strikes"             "4"
+			"strike_interval"     "2.0"
+			"strike_damage"       "30 60 90 120"
+			"strike_damage_bonus" "0"
+			"slow_duration"       "0.3"
+			"slow_amount"         "100"
+		}
+	}
+
+	"disruptor_glimpse_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "disruptor_passives_custom.lua"
+		"AbilityTextureName"     "disruptor_glimpse"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"glimpse_interval"    "24 22 20 18"
+			"backtrack_time"      "4.0"
+			"cast_range"          "600 1000 1400 1800"
+			"silence_duration"    "0"
+			"min_damage"          "25"
+			"max_damage"          "100 160 220 280"
+			"damage_to_distance_pct" "20 25 30 35"
+		}
+	}
+
+	"disruptor_kinetic_field_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "disruptor_passives_custom.lua"
+		"AbilityTextureName"     "disruptor_kinetic_field"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"AbilityValues"
+		{
+			"field_interval"      "20 18 16 14"
+			"search_radius"       "900"
+			"radius"              "350"
+			"formation_time"      "1"
+			"duration"            "2.6 3.2 3.8 4.4"
+			"damage_per_second"   "0"
+			"wall_thickness"      "100"
+			"tick_rate"           "0.1"
+		}
+	}
+
+	"disruptor_static_storm_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "disruptor_passives_custom.lua"
+		"AbilityTextureName"     "disruptor_static_storm"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"storm_interval"      "100 85 70"
+			"search_radius"       "800"
+			"radius"              "550"
+			"pulses"              "20"
+			"damage_max"          "200 275 350"
+			"duration"            "6.0"
+			"tick_rate"           "0.3"
+		}
+	}
+
 	//=================================================================================================================
 	// Templar Assassin: Refraction Holdout
 	//=================================================================================================================
