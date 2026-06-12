@@ -1,0 +1,132 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	"npc_dota_hero_alchemist"
+	{
+		"override_hero"     "npc_dota_hero_alchemist"
+		"Ability1"          "alchemist_acid_spray_custom"
+		"Ability2"          "alchemist_unstable_concoction_custom"
+		// "Ability3"          "alchemist_greevils_greed_custom"
+		"Ability6"          "alchemist_chemical_rage_custom"
+	}
+
+	"npc_dota_hero_axe"
+	{
+		"override_hero"     "npc_dota_hero_axe"
+		"Ability1"          "axe_berserkers_call_custom"
+		"Ability2"          "axe_battle_hunger_custom"
+		"Ability3"          "axe_counter_helix_custom"
+		"Ability6"          "axe_culling_blade_custom"
+	}
+
+	"npc_dota_hero_bristleback"
+	{
+		"override_hero"     "npc_dota_hero_bristleback"
+		"Ability1"          "bristleback_viscous_nasal_goo_custom"
+		"Ability2"          "bristleback_quill_spray_custom"
+		"Ability3"          "bristleback_bristleback_custom"
+		"Ability6"          "bristleback_warpath_custom"
+	}
+
+	"npc_dota_hero_broodmother"
+	{
+		"override_hero"     "npc_dota_hero_broodmother"
+		"Ability1"          "broodmother_insatiable_hunger_custom"
+		"Ability2"          "broodmother_spin_web_custom"
+		"Ability3"          "broodmother_incapacitating_bite_custom"
+		"Ability6"          "broodmother_spawn_spiderlings_custom"
+	}
+
+	"npc_dota_hero_centaur"
+	{
+		"override_hero"     "npc_dota_hero_centaur"
+		"Ability1"          "centaur_hoof_stomp_custom"
+		"Ability2"          "centaur_double_edge_custom"
+		"Ability3"          "centaur_return_custom"
+		"Ability6"          "centaur_stampede_custom"
+	}
+
+	"npc_dota_hero_chaos_knight"
+	{
+		"override_hero"     "npc_dota_hero_chaos_knight"
+		"Ability1"          "chaos_knight_chaos_bolt_custom"
+		"Ability2"          "chaos_knight_reality_rift_custom"
+		"Ability3"          "chaos_knight_chaos_strike_custom"
+		"Ability6"          "chaos_knight_phantasm_custom"
+	}
+
+	"npc_dota_hero_chen"
+	{
+		"override_hero"     "npc_dota_hero_chen"
+		"Ability1"          "chen_penitence_custom"
+		"Ability2"          "chen_holy_persuasion_custom"
+		"Ability3"          "chen_divine_favor_custom"
+		"Ability6"          "chen_hand_of_god_custom"
+	}
+
+	"npc_dota_hero_clinkz"
+	{
+		"override_hero"     "npc_dota_hero_clinkz"
+		"Ability1"          "clinkz_strafe_custom"
+		"Ability2"          "clinkz_searing_arrows_custom"
+		"Ability3"          "clinkz_death_pact_custom"
+		"Ability6"          "clinkz_wind_walk_custom"
+	}
+
+	"npc_dota_hero_crystal_maiden"
+	{
+		"override_hero"     "npc_dota_hero_crystal_maiden"
+		"Ability1"          "crystal_maiden_crystal_nova_custom"
+		"Ability2"          "crystal_maiden_frostbite_custom"
+		"Ability3"          "crystal_maiden_brilliance_aura_custom"
+		"Ability6"          "crystal_maiden_freezing_field_custom"
+	}
+
+	"npc_dota_hero_dark_seer"
+	{
+		"override_hero"     "npc_dota_hero_dark_seer"
+		"Ability1"          "dark_seer_vacuum_custom"
+		"Ability2"          "dark_seer_ion_shell_custom"
+		"Ability3"          "dark_seer_surge_custom"
+		"Ability6"          "dark_seer_wall_of_replica_custom"
+	}
+
+	"npc_dota_hero_dark_willow"
+	{
+		"override_hero"     "npc_dota_hero_dark_willow"
+		"Ability1"          "dark_willow_bramble_maze_custom"
+		"Ability2"          "dark_willow_shadow_realm_custom"
+		"Ability3"          "dark_willow_cursed_crown_custom"
+		"Ability6"          "dark_willow_terrorize_custom"
+	}
+
+	"npc_dota_hero_dazzle"
+	{
+		"override_hero"     "npc_dota_hero_dazzle"
+		"Ability1"          "dazzle_poison_touch_custom"
+		"Ability2"          "dazzle_shallow_grave_custom"
+		"Ability3"          "dazzle_shadow_wave_custom"
+		"Ability6"          "dazzle_weave_custom"
+	}
+
+	"npc_dota_hero_death_prophet"
+	{
+		"override_hero"     "npc_dota_hero_death_prophet"
+		"Ability1"          "death_prophet_carrion_swarm_custom"
+		"Ability2"          "death_prophet_silence_custom"
+		"Ability3"          "death_prophet_spirit_siphon_custom"
+		"Ability6"          "death_prophet_exorcism_custom"
+	}
+
+	//=================================================================================================================
+	// HERO: Templar Assassin
+	//=================================================================================================================
+	"npc_dota_hero_templar_assassin_template"
+	{
+		"override_hero"				"npc_dota_hero_templar_assassin"			// Hero to override
+		"Ability1"					"templar_assassin_refraction_holdout"		// Ability 1
+		"VisionNighttimeRange"		"1800"										// Range of vision at night time.
+	}
+}

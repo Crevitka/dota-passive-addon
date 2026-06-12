@@ -1,0 +1,1159 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"alchemist_acid_spray_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "alchemist_acid_spray_custom.lua"
+		"AbilityTextureName"     "alchemist_acid_spray"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCooldown"        "1.0"
+		"AbilityManaCost"        "0"
+		"AbilityCastPoint"       "0.0"
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value"                   "350 400 450 500"
+				"affected_by_aoe_increase" "1"
+			}
+			"damage"
+			{
+				"value"                   "25 30 35 40"
+				"CalculateSpellDamageTooltip" "1"
+			}
+			"armor_reduction"
+			{
+				"value"                   "3 4 5 6"
+			}
+			"tick_rate"                  "1.0"
+			"mana_per_second"            "15 20 25 30"
+		}
+	}
+
+	"alchemist_unstable_concoction_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "alchemist_unstable_concoction_custom.lua"
+		"AbilityTextureName"     "alchemist_unstable_concoction"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityCastRange"       "775"
+		"AbilityValues"
+		{
+			"launch_interval"      "5.0 4.0 3.0 2.0"
+			"search_radius"        "775"
+			"projectile_speed"     "900"
+			"max_stun"             "1.7 2.2 2.7 3.2"
+			"max_damage"
+			{
+				"value"            "150 220 290 360"
+			}
+			"radius"
+			{
+				"value"            "250"
+				"affected_by_aoe_increase" "1"
+			}
+		}
+	}
+
+	"alchemist_chemical_rage_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "alchemist_chemical_rage_custom.lua"
+		"AbilityTextureName"     "alchemist_chemical_rage"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityValues"
+		{
+			"transformation_time"   "0.35"
+			"base_attack_time"
+			{
+				"value"             "1.2 1.1 1.0"
+			}
+			"bonus_health_regen"
+			{
+				"value"             "50 85 120"
+			}
+			"bonus_movespeed"
+			{
+				"value"             "20 30 40"
+			}
+		}
+	}
+
+	"axe_berserkers_call_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "axe_passives_custom.lua"
+		"AbilityTextureName"     "axe_berserkers_call"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityValues"
+		{
+			"call_interval"       "8 7 6 5"
+			"radius"
+			{
+				"value"           "315"
+				"affected_by_aoe_increase" "1"
+			}
+			"bonus_armor"        "12 13 14 15"
+			"duration"           "2.1 2.4 2.7 3.0"
+		}
+	}
+
+	"axe_battle_hunger_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "axe_passives_custom.lua"
+		"AbilityTextureName"     "axe_battle_hunger"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityValues"
+		{
+			"apply_interval"      "6 5 4 3"
+			"search_radius"
+			{
+				"value"           "600 700 800 900"
+				"affected_by_aoe_increase" "1"
+			}
+			"duration"           "12.0"
+			"slow"
+			{
+				"value"           "18 22 26 30"
+				"display_type"    "kDebuffPercentage"
+			}
+			"damage_per_second"
+			{
+				"value"           "12 18 24 30"
+				"CalculateSpellDamageTooltip" "1"
+			}
+		}
+	}
+
+	"axe_counter_helix_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "axe_passives_custom.lua"
+		"AbilityTextureName"     "axe_counter_helix"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityValues"
+		{
+			"damage"             "100 120 140 160"
+			"radius"
+			{
+				"value"           "275"
+				"affected_by_aoe_increase" "1"
+			}
+			"trigger_attacks"    "7 6 5 4"
+			"helix_cooldown"     "0.3"
+		}
+	}
+
+	"axe_culling_blade_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "axe_passives_custom.lua"
+		"AbilityTextureName"     "axe_culling_blade"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityValues"
+		{
+			"scan_interval"       "0.5"
+			"search_radius"       "400"
+			"damage"             "275 375 475"
+			"speed_bonus"
+			{
+				"value"           "20 25 30"
+				"display_type"    "kBuffPercentage"
+			}
+			"armor_bonus"         "10 15 20"
+			"speed_duration"      "6"
+			"speed_aoe"
+			{
+				"value"           "900"
+				"affected_by_aoe_increase" "1"
+			}
+		}
+	}
+
+	"bristleback_viscous_nasal_goo_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "bristleback_passives_custom.lua"
+		"AbilityTextureName"     "bristleback_viscous_nasal_goo"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"apply_interval"      "5.0 4.0 3.0 2.0"
+			"search_radius"
+			{
+				"value"           "650"
+				"affected_by_aoe_increase" "1"
+			}
+			"goo_speed"           "1000"
+			"goo_duration"        "5.0"
+			"base_armor"          "1.5 2 2.5 3"
+			"armor_per_stack"     "2.0 2.5 3.0 3.5"
+			"base_move_slow"      "12"
+			"move_slow_per_stack" "3 6 9 12"
+			"stack_limit"         "6"
+		}
+	}
+
+	"bristleback_quill_spray_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "bristleback_passives_custom.lua"
+		"AbilityTextureName"     "bristleback_quill_spray"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"spray_interval"      "3.0"
+			"radius"
+			{
+				"value"           "700"
+				"affected_by_aoe_increase" "1"
+			}
+			"quill_base_damage"   "25 45 65 85"
+			"quill_stack_damage"  "30"
+			"quill_stack_duration" "14.0"
+			"max_damage"          "500"
+		}
+	}
+
+	"bristleback_bristleback_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "bristleback_passives_custom.lua"
+		"AbilityTextureName"     "bristleback_bristleback"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"side_damage_reduction" "8 12 16 20"
+			"back_damage_reduction" "16 24 32 40"
+			"side_angle"          "110"
+			"back_angle"          "70"
+			"quill_release_threshold" "275 250 225 200"
+			"quill_release_interval" "0.1"
+		}
+	}
+
+	"bristleback_warpath_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "bristleback_passives_custom.lua"
+		"AbilityTextureName"     "bristleback_warpath"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"damage_per_stack"     "12 16 20"
+			"move_speed_per_stack" "2 2.5 3"
+			"stack_duration"      "16.0 18.0 20.0"
+			"max_stacks"          "8 10 12"
+		}
+	}
+
+	"broodmother_insatiable_hunger_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "broodmother_passives_custom.lua"
+		"AbilityTextureName"     "broodmother_insatiable_hunger"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"bonus_damage"        "40 50 60 70"
+			"lifesteal_pct"       "40 60 80 100"
+		}
+	}
+
+	"broodmother_spin_web_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "broodmother_passives_custom.lua"
+		"AbilityTextureName"     "broodmother_spin_web"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"bonus_movespeed"     "10 20 30 40"
+			"bonus_turn_rate"     "0.2"
+		}
+	}
+
+	"broodmother_incapacitating_bite_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "broodmother_passives_custom.lua"
+		"AbilityTextureName"     "broodmother_incapacitating_bite"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"miss_chance"         "30 40 50 60"
+			"bonus_movespeed"     "-15 -20 -25 -30"
+			"duration"            "2.0"
+			"attack_damage"       "3 6 9 12"
+		}
+	}
+
+	"broodmother_spawn_spiderlings_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "broodmother_passives_custom.lua"
+		"AbilityTextureName"     "broodmother_spawn_spiderlings"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"spawn_interval"      "7 6 5"
+			"search_radius"
+			{
+				"value"           "900"
+				"affected_by_aoe_increase" "1"
+			}
+			"buff_duration"       "20"
+			"spiderling_duration" "40"
+			"damage"              "220 320 420"
+			"count"               "4 5 6"
+			"slow_duration"       "4"
+			"movement_speed"      "25 35 45"
+		}
+	}
+
+	"centaur_hoof_stomp_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "centaur_passives_custom.lua"
+		"AbilityTextureName"     "centaur_hoof_stomp"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityValues"
+		{
+			"stomp_interval"      "8 7 6 5"
+			"radius"
+			{
+				"value"           "325"
+				"affected_by_aoe_increase" "1"
+			}
+			"stomp_damage"        "70 140 210 280"
+			"stun_duration"       "1.6 1.8 2.0 2.2"
+		}
+	}
+
+	"centaur_double_edge_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "centaur_passives_custom.lua"
+		"AbilityTextureName"     "centaur_double_edge"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityValues"
+		{
+			"edge_interval"       "3.5"
+			"search_radius"
+			{
+				"value"           "250"
+				"affected_by_aoe_increase" "1"
+			}
+			"edge_damage"         "120 180 240 300"
+			"strength_damage"     "60 90 120 150"
+			"radius"
+			{
+				"value"           "220"
+				"affected_by_aoe_increase" "1"
+			}
+		}
+	}
+
+	"centaur_return_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "centaur_passives_custom.lua"
+		"AbilityTextureName"     "centaur_return"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"return_damage"       "15 25 35 45"
+			"return_damage_str"   "16 24 32 40"
+		}
+	}
+
+	"centaur_stampede_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "centaur_passives_custom.lua"
+		"AbilityTextureName"     "centaur_stampede"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"pulse_interval"      "1.0"
+			"strength_damage"     "2 2.5 3"
+			"slow_duration"       "3"
+			"radius"
+			{
+				"value"           "150"
+				"affected_by_aoe_increase" "1"
+			}
+			"slow_movement_speed" "100"
+			"bonus_movespeed"     "25 35 45"
+		}
+	}
+
+	"chaos_knight_chaos_bolt_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chaos_knight_passives_custom.lua"
+		"AbilityTextureName"     "chaos_knight_chaos_bolt"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityValues"
+		{
+			"bolt_interval"       "13 12 11 10"
+			"search_radius"
+			{
+				"value"           "600"
+				"affected_by_aoe_increase" "1"
+			}
+			"stun_min"            "1.25 1.5 1.75 2"
+			"stun_max"            "1.75 2.25 2.75 3.25"
+			"damage_min"          "90 120 150 180"
+			"damage_max"          "155 240 325 410"
+		}
+	}
+
+	"chaos_knight_reality_rift_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chaos_knight_passives_custom.lua"
+		"AbilityTextureName"     "chaos_knight_reality_rift"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"rift_interval"       "15 12 9 6"
+			"search_radius"
+			{
+				"value"           "600 650 700 750"
+				"affected_by_aoe_increase" "1"
+			}
+			"pull_distance"       "300 350 400 450"
+			"armor_reduction"     "4 5 6 7"
+			"duration"            "6"
+		}
+	}
+
+	"chaos_knight_chaos_strike_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chaos_knight_passives_custom.lua"
+		"AbilityTextureName"     "chaos_knight_chaos_strike"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"chance"              "33.33"
+			"crit_min"            "120"
+			"crit_max"            "150 190 230 270"
+			"lifesteal"           "30 40 50 60"
+		}
+	}
+
+	"chaos_knight_phantasm_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chaos_knight_passives_custom.lua"
+		"AbilityTextureName"     "chaos_knight_phantasm"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"phantasm_interval"   "85 80 75"
+			"images_count"        "3"
+			"illusion_duration"   "30.0"
+			"outgoing_damage"     "-40 -20 0"
+			"outgoing_damage_tooltip" "60 80 100"
+			"incoming_damage"     "250"
+			"incoming_damage_tooltip" "350"
+		}
+	}
+
+	"chen_penitence_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chen_passives_custom.lua"
+		"AbilityTextureName"     "chen_penitence"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PURE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"penitence_interval"  "10 9 8 7"
+			"search_radius"
+			{
+				"value"           "800"
+				"affected_by_aoe_increase" "1"
+			}
+			"duration"            "5 6 7 8"
+			"bonus_movement_speed" "-12 -18 -24 -30"
+			"bonus_attack_speed"  "20 40 60 80"
+			"damage"              "50 100 150 200"
+		}
+	}
+
+	"chen_holy_persuasion_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chen_passives_custom.lua"
+		"AbilityTextureName"     "chen_holy_persuasion"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES"
+		"AbilityValues"
+		{
+			"summon_interval"     "20 18 16 14"
+			"max_units"           "1 2 3 4"
+			"health_min"          "400 550 700 850"
+			"movement_speed_bonus" "5 10 20 30"
+			"damage_bonus"        "5 10 15 20"
+		}
+	}
+
+	"chen_divine_favor_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chen_passives_custom.lua"
+		"AbilityTextureName"     "chen_divine_favor"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"aura_radius"
+			{
+				"value"           "1200"
+				"affected_by_aoe_increase" "1"
+			}
+			"heal_rate"           "1.5 3 4.5 6"
+			"bonus_armor"         "5 10 15 20"
+			"heal_amp"            "5 10 15 20"
+		}
+	}
+
+	"chen_hand_of_god_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "chen_passives_custom.lua"
+		"AbilityTextureName"     "chen_hand_of_god"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"heal_interval"       "60 50 40"
+			"heal_amount"         "200 300 400"
+			"hot_duration"        "10"
+			"heal_per_second"     "20 30 40"
+		}
+	}
+
+	"clinkz_strafe_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "clinkz_passives_custom.lua"
+		"AbilityTextureName"     "clinkz_strafe"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"attack_speed_bonus"  "120 160 200 240"
+			"attack_range_bonus"  "200"
+			"strafe_skeleton_radius"
+			{
+				"value"           "1200"
+				"affected_by_aoe_increase" "1"
+			}
+			"archer_attack_speed_pct" "40"
+		}
+	}
+
+	"clinkz_searing_arrows_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "clinkz_passives_custom.lua"
+		"AbilityTextureName"     "clinkz_searing_arrows"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"damage_bonus"        "20 35 50 65"
+			"skeleton_damage_pct" "50"
+		}
+	}
+
+	"clinkz_death_pact_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "clinkz_passives_custom.lua"
+		"AbilityTextureName"     "clinkz_death_pact"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"pact_interval"       "40"
+			"search_radius"       "700"
+			"duration"            "45"
+			"health_gain"         "175 250 325 400"
+			"creep_level"         "4 5 6 6"
+		}
+	}
+
+	"clinkz_wind_walk_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "clinkz_passives_custom.lua"
+		"AbilityTextureName"     "clinkz_wind_walk"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"move_speed_bonus_pct" "25 35 45"
+			"skeleton_count"      "2 3 4"
+			"skeleton_duration"   "20 25 30"
+			"skeleton_health_tooltip" "2"
+			"attack_rate"         "1.6"
+			"damage_percent"      "20"
+		}
+	}
+
+	"crystal_maiden_crystal_nova_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "crystal_maiden_passives_custom.lua"
+		"AbilityTextureName"     "crystal_maiden_crystal_nova"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"nova_interval"       "11 10 9 8"
+			"search_radius"       "900"
+			"radius"
+			{
+				"value"           "425"
+				"affected_by_aoe_increase" "1"
+			}
+			"movespeed_slow"      "-20 -30 -40 -50"
+			"attackspeed_slow"    "-30 -45 -60 -75"
+			"duration"            "4"
+			"nova_damage"         "110 160 210 260"
+		}
+	}
+
+	"crystal_maiden_frostbite_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "crystal_maiden_passives_custom.lua"
+		"AbilityTextureName"     "crystal_maiden_frostbite"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"frostbite_interval"  "9 8 7 6"
+			"search_radius"       "600"
+			"damage_per_second"   "100"
+			"duration"            "1.5 2 2.5 3"
+			"creep_multiplier"    "4"
+			"tick_interval"       "0.25"
+		}
+	}
+
+	"crystal_maiden_brilliance_aura_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "crystal_maiden_passives_custom.lua"
+		"AbilityTextureName"     "crystal_maiden_brilliance_aura"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"IsBreakable"            "1"
+		"AbilityValues"
+		{
+			"base_mana_regen"     "0.4 0.6 0.8 1"
+			"proximity_mana_regen_tooltip" "1.2 1.8 2.4 3.0"
+			"mana_regen_amp"      "20 40 60 80"
+			"proximity_bonus_factor" "3"
+			"proximity_bonus_radius"
+			{
+				"value"           "1200"
+				"affected_by_aoe_increase" "1"
+			}
+		}
+	}
+
+	"crystal_maiden_freezing_field_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "crystal_maiden_passives_custom.lua"
+		"AbilityTextureName"     "crystal_maiden_freezing_field"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value"           "810"
+				"affected_by_aoe_increase" "1"
+			}
+			"explosion_radius"
+			{
+				"value"           "320"
+				"affected_by_aoe_increase" "1"
+			}
+			"explosion_interval"  "0.5"
+			"movespeed_slow"      "-40"
+			"attack_slow"         "-80 -120 -160"
+			"slow_duration"       "1.0"
+			"explosion_min_dist"  "195"
+			"explosion_max_dist"  "785"
+			"damage"              "110 180 250"
+		}
+	}
+
+	"dark_seer_vacuum_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_seer_passives_custom.lua"
+		"AbilityTextureName"     "dark_seer_vacuum"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityValues"
+		{
+			"vacuum_interval"     "30 25 20 15"
+			"radius"
+			{
+				"value"           "325 400 475 550"
+				"affected_by_aoe_increase" "1"
+			}
+			"duration"            "0.3 0.4 0.5 0.6"
+			"damage"              "70 130 190 250"
+			"pull_distance"       "150"
+		}
+	}
+
+	"dark_seer_ion_shell_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_seer_passives_custom.lua"
+		"AbilityTextureName"     "dark_seer_ion_shell"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value"           "275"
+				"affected_by_aoe_increase" "1"
+			}
+			"damage_per_second"   "30 50 70 90"
+			"tick_interval"       "0.2"
+			"bonus_health"        "0"
+		}
+	}
+
+	"dark_seer_surge_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_seer_passives_custom.lua"
+		"AbilityTextureName"     "dark_seer_surge"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"speed_boost"         "550"
+			"trail_radius"        "150"
+			"trail_move_slow"     "-35"
+			"trail_damage"        "40"
+			"trail_damage_interval" "0.5"
+		}
+	}
+
+	"dark_seer_wall_of_replica_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_seer_passives_custom.lua"
+		"AbilityTextureName"     "dark_seer_wall_of_replica"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"AbilityValues"
+		{
+			"wall_interval"       "30"
+			"search_radius"       "1000"
+			"duration"            "30.0"
+			"replica_damage_outgoing" "-30 -20 -10"
+			"tooltip_outgoing"    "70 80 90"
+			"replica_damage_incoming" "100"
+			"tooltip_replica_total_damage_incoming" "200"
+			"movement_slow"       "40"
+			"slow_duration"       "1"
+			"wall_damage"         "25 40 55"
+		}
+	}
+
+	"dark_willow_bramble_maze_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_willow_passives_custom.lua"
+		"AbilityTextureName"     "dark_willow_bramble_maze"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"bramble_interval"    "22 20 18 16"
+			"search_radius"       "1000 1100 1200 1300"
+			"placement_range"     "500"
+			"placement_count"     "8"
+			"placement_duration"  "12"
+			"latch_duration"      "1.0 1.5 2.0 2.5"
+			"latch_range"         "90"
+			"damage_per_tick"     "50 55 60 65"
+			"latch_creation_interval" "0.075"
+		}
+	}
+
+	"dark_willow_shadow_realm_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_willow_passives_custom.lua"
+		"AbilityTextureName"     "dark_willow_shadow_realm"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"damage"              "120 200 280 360"
+			"attack_range_bonus"  "600"
+			"max_damage_duration" "3.0"
+			"attack_cooldown"     "5.0"
+		}
+	}
+
+	"dark_willow_cursed_crown_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_willow_passives_custom.lua"
+		"AbilityTextureName"     "dark_willow_cursed_crown"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"crown_interval"      "17 15 13 11"
+			"search_radius"       "700"
+			"delay"               "4"
+			"stun_duration"       "1.5 1.8 2.1 2.4"
+			"stun_radius"         "360"
+		}
+	}
+
+	"dark_willow_terrorize_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dark_willow_passives_custom.lua"
+		"AbilityTextureName"     "dark_willow_terrorize"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"terrorize_interval"  "100 90 80"
+			"search_radius"       "1200"
+			"destination_radius"  "450 500 550"
+			"destination_status_duration" "2.8 3.0 3.2"
+			"impact_damage"       "0 0 0"
+		}
+	}
+
+	"dazzle_poison_touch_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dazzle_passives_custom.lua"
+		"AbilityTextureName"     "dazzle_poison_touch"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"poison_interval"     "24 21 18 15"
+			"search_radius"       "500 600 700 800"
+			"start_radius"        "200"
+			"end_radius"          "300"
+			"end_distance"        "600 700 800 900"
+			"targets"             "2 4 6 8"
+			"damage"              "16 28 40 52"
+			"slow"                "-13 -16 -19 -22"
+			"duration"            "3.5 5 6.5 8"
+			"bonus_damage"        "0"
+			"bonus_slow"          "-2.5 -3 -3.5 -4.0"
+		}
+	}
+
+	"dazzle_shallow_grave_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dazzle_passives_custom.lua"
+		"AbilityTextureName"     "dazzle_shallow_grave"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ALLIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"grave_interval"      "30 26 22 18"
+			"search_radius"       "900"
+			"health_threshold_pct" "25"
+			"duration"            "4 4.5 5.0 5.5"
+			"heal_amplify"        "3 5 7 9"
+		}
+	}
+
+	"dazzle_shadow_wave_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dazzle_passives_custom.lua"
+		"AbilityTextureName"     "dazzle_shadow_wave"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityValues"
+		{
+			"wave_interval"       "10 9 8 7"
+			"search_radius"       "800"
+			"bounce_radius"       "475"
+			"damage_radius"       "185"
+			"max_targets"         "3 4 5 6"
+			"tooltip_max_targets_inc_dazzle" "4 5 6 7"
+			"damage"              "85 105 125 145"
+		}
+	}
+
+	"dazzle_weave_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "dazzle_passives_custom.lua"
+		"AbilityTextureName"     "dazzle_weave"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"radius"              "575 575 575"
+			"armor_per_second"    "0.75 1 1.25"
+			"duration"            "24"
+		}
+	}
+
+	"death_prophet_carrion_swarm_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "death_prophet_passives_custom.lua"
+		"AbilityTextureName"     "death_prophet_carrion_swarm"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityValues"
+		{
+			"swarm_interval"      "9 8 7 6"
+			"search_radius"       "900"
+			"damage"              "100 175 250 325"
+			"start_radius"        "110"
+			"end_radius"          "300"
+			"range"               "900"
+			"speed"               "1100"
+			"slow_percent"        "0"
+			"slow_duration"       "0"
+		}
+	}
+
+	"death_prophet_silence_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "death_prophet_passives_custom.lua"
+		"AbilityTextureName"     "death_prophet_silence"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_YES"
+		"AbilityValues"
+		{
+			"silence_interval"    "15 14 13 12"
+			"search_radius"       "900"
+			"duration"            "3.5 4.0 4.5 5.0"
+			"radius"              "450"
+			"movement_slow"       "0"
+			"damage_per_second"   "0"
+			"tick_interval"       "0"
+		}
+	}
+
+	"death_prophet_spirit_siphon_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "death_prophet_passives_custom.lua"
+		"AbilityTextureName"     "death_prophet_spirit_siphon"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"siphon_interval"     "40"
+			"search_radius"       "500"
+			"damage"              "25 50 75 100"
+			"damage_pct"          "0"
+			"haunt_duration"      "6"
+			"siphon_buffer"       "250"
+			"tick_interval"       "1"
+		}
+	}
+
+	"death_prophet_exorcism_custom"
+	{
+		"BaseClass"              "ability_lua"
+		"ScriptFile"             "death_prophet_passives_custom.lua"
+		"AbilityTextureName"     "death_prophet_exorcism"
+		"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"            "DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"  "DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"      "SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"   "SPELL_DISPELLABLE_NO"
+		"AbilityValues"
+		{
+			"radius"              "700 700 700"
+			"spirits"             "10 18 26"
+			"spirit_speed"        "525"
+			"max_distance"        "2000"
+			"give_up_distance"    "1200"
+			"min_damage"          "62 65 68"
+			"max_damage"          "68 71 74"
+			"heal_percent"        "25"
+			"average_damage"      "65 68 71"
+			"ghost_spawn_rate"    "0.25"
+			"movement_bonus"      "0"
+		}
+	}
+
+	//=================================================================================================================
+	// Templar Assassin: Refraction Holdout
+	//=================================================================================================================
+	"templar_assassin_refraction_holdout"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"17.0 17.0 17.0 17.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_absorb"				"200 300 400 500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"20 40 60 80"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"17.0 17.0 17.0 17.0"
+			}
+		}
+	}
+}
